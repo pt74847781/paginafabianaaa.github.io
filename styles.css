@@ -1,0 +1,122 @@
+/* Estilos CSS */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #FF4081;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #FFFFFF;
+    font-size: 28px;
+  }
+  
+  /* Estilos del contenido principal */
+  main {
+    padding: 20px;
+  }
+  
+  /* Estilos del área de bienvenida */
+  #hero {
+    background-color: #FCE4EC;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #FF4081;
+    font-size: 24px;
+  }
+  
+  /* Estilos de los mensajes de amor */
+  #messages {
+    padding: 40px 0;
+  }
+  
+  .message-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .message {
+    width: 45%;
+    background-color: #FCE4EC;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    color: #ec91b0;
+    font-size: 20px;
+  }
+  
+  /* Estilos de la galería de fotos */
+  #gallery {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .photo {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #b53e3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .photo-overlay p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .photo:hover img {
+    transform: scale(1.1);
+  }
+  
+  .photo:hover .photo-overlay {
+    opacity: 1;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333333;
+    color: #986c6c;
+    padding: 20px;
+    text-align: center;
+  }
